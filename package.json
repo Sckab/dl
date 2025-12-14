@@ -24,7 +24,12 @@
   "scripts": {
     "build": "tsc",
     "run": "node dist/index.js",
-    "format": "prettier --write 'src/**/*.ts'",
+    "format": "biome format --write",
+    "lint": "biome check --write",
     "dev": "ts-node src/index.ts"
+  },
+  "dependencies": {
+    "@biomejs/biome": "^2.3.8",
+    "init": "^0.1.2"
   }
 }
